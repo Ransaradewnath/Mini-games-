@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Games Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎮 Mini Games Hub</h1>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <section class="game-grid">
+    <div class="game-card" onclick="launchGame('memory')">
+      <div class="card-inner">
+        <div class="card-front">🧠 Memory Game</div>
+        <div class="card-back">Click to Play</div>
+      </div>
+    </div>
+
+    <div class="game-card" onclick="launchGame('dice')">
+      <div class="card-inner">
+        <div class="card-front">🎲 Dice Roller</div>
+        <div class="card-back">Click to Play</div>
+      </div>
+    </div>
+
+    <div class="game-card" onclick="launchGame('rps')">
+      <div class="card-inner">
+        <div class="card-front">✂️ RPS Game</div>
+        <div class="card-back">Click to Play</div>
+      </div>
+    </div>
+  </section>
+
+  <div id="gameModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeGame()">&times;</span>
+      <div id="gameArea"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Site Developer: <strong>Ransara Devnath</strong> © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
